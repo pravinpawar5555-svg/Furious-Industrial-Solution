@@ -1,0 +1,6 @@
+{
+  "name": "Furious Industrial Solution (FIS)",
+  "description": "Industrial condition monitoring, vibration analysis, laser shaft alignment, in-situ dynamic balancing, oil analysis, RCFA, and machinery overhauling services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

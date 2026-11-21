@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy-950: #071524;
+  --color-navy-900: #0B1F33;
+  --color-navy-800: #122E4A;
+  --color-navy-700: #1B3E60;
+  --color-teal-700: #0C5868;
+  --color-teal-600: #0F6B7D;
+  --color-teal-500: #168398;
+  --color-teal-50: #EEF7F9;
+  --color-orange-700: #BF5709;
+  --color-orange-600: #DF6C12;
+  --color-orange-500: #EC7D22;
+  --color-orange-50: #FFF5EC;
+  --color-surface: #F4F7F9;
+  --color-line: #D8E1E8;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #0B1F33;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0F6B7D;
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
